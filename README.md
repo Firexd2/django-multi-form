@@ -29,7 +29,7 @@ from multi_form.generic import MultiFormView, DetailMultiFormView, ListMultiForm
 
 ## Usage
 
-### Add/output forms
+### Add/output
 
 Add forms to the dict form_classes, where the key is the form name, and the value is the form class:
 
@@ -47,7 +47,7 @@ In template for output forms usage:
 
 ```
 
-### Validation forms
+### Validation
 
 By default, in the case of validation, there is the method:
 
