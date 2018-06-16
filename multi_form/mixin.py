@@ -55,7 +55,8 @@ class MultiFormMixin(ContextMixin):
         return self.redirect_to_success_url()
 
     def general_invalid_form(self, form):
-        return self.render_to_response(self.get_context_data(**{'form_' + self.form_name: form}))
+        data = self.get_context_data(**{'form_' + self.form_name: form})
+        return self.render_to_response(data)
 
     def post(self, *args, **kwargs):
 
